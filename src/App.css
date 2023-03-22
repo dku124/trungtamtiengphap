@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+
+/* reset default style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* base style */
+
+body {
+  background: #fcfcfc;
+  font-family: 'Istok Web', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'RocknRoll One', sans-serif !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+h1,
+h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #212245;
+}
+
+ul,
+li,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 60px 0px;
+}
+button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+/* .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.logo h1,
+.logo h2 {
+  font-size: 1rem;
+  margin: 4px 0 0;
+}
+.logo img {
+  width: 40%;
+}
+.section__title {
+  margin-top: 1.5rem;
+  font-size: 3rem;
+}
+.section__title {
+  color: #212245;
+  font-size: 2rem;
+}
+.section__title span {
+  color: #df2020;
+}
+.section__subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #df2020;
+}
+
+.paginationBttns li a {
+  padding: 8px 12px;
+  background-color: #df2020;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.paginationBttns {
+  margin: 2rem;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  column-gap: 0.5rem;
+} */
 
-.App-link {
-  color: #61dafb;
+.paginationBttns li a:not([href]):not([class]),
+a:not([href]):not([class]):hover {
+  color: #fff;
 }
+/* 
+@media screen and (max-width: 768px) {
+  section {
+    padding: 60px 0px 0px;
+  }
+  .section__title {
+    font-size: 1.8rem;
+  }
+  .text__font {
+    font-size: 0.92rem;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .logo img {
+    width: 30%;
   }
-  to {
-    transform: rotate(360deg);
+  .logo h1,
+  .logo h2 {
+    font-size: 0.8rem;
   }
-}
+} */
